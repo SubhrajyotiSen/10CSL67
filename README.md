@@ -1,6 +1,6 @@
-##Computer Graphics and Visualization Lab (VTU)
+## Computer Graphics and Visualization Lab (VTU)
 
-###Installing on Linux
+### Installing on Linux
 You can install the required dependencies using the following commands
 
     sudo apt-get update
@@ -14,9 +14,9 @@ You can install the required dependencies using the following commands
     sudo apt-get install build-essential
     sudo apt-get install libglew1.5-dev libglm-dev
 
-###Compiling the code
+### Compiling the code
 
     g++ file.c -lglut -lGL -lGLEW -lGLU -o compiledFileName
-###Executing the  code
+### Executing the  code
 
     ./compiledFileName
