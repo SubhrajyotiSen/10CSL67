@@ -10,7 +10,7 @@ int n;
 
 void triangle(point a, point b, point c){
 	glBegin(GL_POLYGON);
-	glNormal3fv(a);
+//	glNormal3fv(a);
 	glVertex3fv(a);
 	glVertex3fv(b);
 	glVertex3fv(c);
@@ -57,7 +57,7 @@ void myReshape(int w, int h){
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	if(w <= h)	glOrtho(-2.0, 2.0, -2.0*(GLfloat)h/(GLfloat)w, 2.0*(GLfloat)h/(GLfloat)w, -10.0, 10.0);
-	else glOrtho(-2.0*(GLfloat)h/(GLfloat)w, 2.0*(GLfloat)h/(GLfloat)w, -2.0, 2.0, -10.0, 10.0);
+	else glOrtho(-2.0*(GLfloat)w/(GLfloat)h, 2.0*(GLfloat)w/(GLfloat)h, -2.0, 2.0, -10.0, 10.0);
 	glMatrixMode(GL_MODELVIEW);
 	glutPostRedisplay();
 }
