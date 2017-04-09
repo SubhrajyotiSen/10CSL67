@@ -9,7 +9,7 @@
  6. Cylinder and Parallelepiped
  7. Tea pot
  8. Color cube with perspective viewing
- 9. Polygon using scan-line area filling
+ 9. [Polygon using scan-line area filling](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/9.c)
  10. [Rectangular mesh](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/10.c)      
  
 
