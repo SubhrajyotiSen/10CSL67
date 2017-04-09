@@ -2,8 +2,7 @@
 
 float x1, x2, x3, x4, y1, y2, y3, y4;
 
-void edgedetect(float x1, float y1, float x2, float y2, int *le, int *re)
-{
+void edgedetect(float x1, float y1, float x2, float y2, int *le, int *re) {
 	float mx, x, temp;
 	int i;
 
@@ -35,17 +34,14 @@ void edgedetect(float x1, float y1, float x2, float y2, int *le, int *re)
 	}
 }
 
-
-void draw_pixel(int x, int y)
-{
+void draw_pixel(int x, int y) {
 	glColor3f(1.0, 0.0, 0.0);
 	glBegin(GL_POINTS);
 	glVertex2i(x, y);
 	glEnd();
 }
 
-void scanfill(float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4)
-{
+void scanfill(float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4) {
 
 	int left_edge[500], right_edge[500];
 	int i, j;
@@ -67,8 +63,7 @@ void scanfill(float x1, float y1, float x2, float y2, float x3, float y3, float 
 	}
 }
 
-void display()
-{
+void display() {
 	x1=200.0; y1=200.0;
 	x2=100.0; y2=300.0;
 	x3=200.0; y3=400.0;
@@ -90,16 +85,14 @@ void display()
 	glFlush();
 }
 
-void myinit()
-{
+void myinit() {
 	glClearColor(1.0, 1.0, 1.0, 1.0);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	gluOrtho2D(0.0, 499.0, 0.0, 499.0);
 }
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
 	glutInitWindowSize(500, 500);
