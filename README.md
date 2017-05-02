@@ -6,7 +6,7 @@
  3. Color Cube with OpenGLTransformation
  4. House
  5. [Cohen-Sutherland](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/5.c)    
- 6. Cylinder and Parallelepiped
+ 6. [Cylinder and Parallelepiped](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/6.c)     
  7. Tea pot
  8. Color cube with perspective viewing
  9. [Polygon using scan-line area filling](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/9.c)
