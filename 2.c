@@ -18,9 +18,6 @@ int cliptest(double p, double q, double *t1, double *t2) {
 		if(t < *t1)
 			return false;
 	}
-	else if(p == 0.0)
-			if(q < 0.0)
-				return false;	
 	return 
 		true;
 }
