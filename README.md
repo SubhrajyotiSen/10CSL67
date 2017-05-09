@@ -32,8 +32,8 @@ You can install the required dependencies using the following commands
     sudo apt-get install libglew1.5-dev libglm-dev
     
 #### On Arch based systems
-    pacman -S mesa
-
+    pacman -S mesa glu freeglut
+    
 ### Compiling the code
 
     g++ file.c -lglut -lGL -lGLEW -lGLU -o compiledFileName
