@@ -36,7 +36,7 @@ You can install the required dependencies using the following commands
     
 ### Compiling the code
 
-    g++ file.c -lglut -lGL -lGLEW -lGLU -o compiledFileName
+    sh compile.sh file.c
 ### Executing the  code
 
-    ./compiledFileName
+    ./compiledFile
