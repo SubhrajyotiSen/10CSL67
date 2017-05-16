@@ -3,7 +3,7 @@
 ### Index
  1. [3D Sierpinski](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/1.c)    
  2. [Liang-Barsky](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/2.c)    
- 3. Color Cube with OpenGLTransformation
+ 3. [Color Cube with OpenGLTransformation](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/3.c)
  4. [House](https://github.com/SubhrajyotiSen/10CSL67/raw/master/4.c)
  5. [Cohen-Sutherland](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/5.c)    
  6. [Cylinder and Parallelepiped](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/6.c)     
