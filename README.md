@@ -7,7 +7,7 @@
  4. [House](https://github.com/SubhrajyotiSen/10CSL67/raw/master/4.c)
  5. [Cohen-Sutherland](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/5.c)    
  6. [Cylinder and Parallelepiped](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/6.c)     
- 7. Tea pot
+ 7. [Tea pot](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/7.c)
  8. [Color cube with perspective viewing](https://github.com/SubhrajyotiSen/10CSL67/raw/master/8.c)
  9. [Polygon using scan-line area filling](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/9.c)
  10. [Rectangular mesh](https://raw.githubusercontent.com/SubhrajyotiSen/10CSL67/master/10.c)      
