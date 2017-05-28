@@ -1,27 +1,45 @@
-#include <stdlib.h>
 #include <GL/glut.h>
 
-GLfloat vertices[][3] = {{-1.0, -1.0, -1.0}, {1.0, -1.0, -1.0}, {1.0, 1.0, -1.0}, {-1.0, 1.0, -1.0}, {-1.0, -1.0, 1.0}, {1.0, -1.0, 1.0}, {1.0, 1.0, 1.0}, {-1.0, 1.0, 1.0}};
-GLfloat normals[][3] = {{-1.0, -1.0, -1.0}, {1.0, -1.0, -1.0}, {1.0, 1.0, -1.0}, {-1.0, 1.0, -1.0}, {-1.0, -1.0, 1.0}, {1.0, -1.0, 1.0}, {1.0, 1.0, 1.0}, {-1.0, 1.0, 1.0}};
-GLfloat colors[][3] = {{0.0, 0.0, 0.0}, {1.0, 0.0, 0.0}, {1.0, 1.0, 0.0}, {0.0, 1.0, 0.0}, {0.0, 0.0, 1.0}, {1.0, 0.0, 1.0}, {1.0, 1.0, 1.0}, {0.0, 1.0, 1.0}};
+GLfloat vertices [][3] = {
+			{-1.0, -1.0, -1.0}, 
+			{ 1.0, -1.0, -1.0}, 
+			{ 1.0,  1.0, -1.0}, 
+			{-1.0,  1.0, -1.0}, 
+			{-1.0, -1.0,  1.0}, 
+			{ 1.0, -1.0,  1.0}, 
+			{ 1.0,  1.0,  1.0}, 
+			{-1.0,  1.0,  1.0}
+	};
 
-static GLfloat theta[]={0.0,0.0,0.0};
-static GLint axis=2;
-static GLdouble viewer[]={0.0,0.0,5.0};
+
+GLfloat colors [][3] = {
+			{0.0, 0.0, 0.0}, 
+			{1.0, 0.0, 0.0}, 
+			{1.0, 1.0, 0.0}, 
+			{0.0, 1.0, 0.0}, 
+			{0.0, 0.0, 1.0}, 
+			{1.0, 0.0, 1.0}, 
+			{1.0, 1.0, 1.0}, 
+			{0.0, 1.0, 1.0}
+	};
+
+GLfloat theta[]={0.0,0.0,0.0};
+GLint axis=2;
+GLdouble viewer[]={0.0,0.0,5.0};
 
 void polygon(int a, int b, int c, int d) {
 	glBegin(GL_POLYGON);
 	glColor3fv(colors[a]);
-	glNormal3fv(normals[a]);
+	glNormal3fv(vertices[a]);
 	glVertex3fv(vertices[a]);
 	glColor3fv(colors[b]);
-	glNormal3fv(normals[b]);
+	glNormal3fv(vertices[b]);
 	glVertex3fv(vertices[b]);
 	glColor3fv(colors[c]);
-	glNormal3fv(normals[c]);
+	glNormal3fv(vertices[c]);
 	glVertex3fv(vertices[c]);
 	glColor3fv(colors[d]);
-	glNormal3fv(normals[d]);
+	glNormal3fv(vertices[d]);
 	glVertex3fv(vertices[d]);
 	glEnd();
 }

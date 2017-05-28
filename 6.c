@@ -40,22 +40,22 @@ void cylinderDraw() {
 		circleDraw(xc, yc+i, r);
 }
 
-void parallelepiped(int x1,int x2,int y1, int y2, int y3, int y4) {
+void parallelepiped(int x1,int x2,int y1, int y2) {
 	glColor3f(0.0, 0.0, 1.0);
 	glPointSize(2.0);
 	glBegin(GL_LINE_LOOP);
 	glVertex2i(x1, y1);
-	glVertex2i(x2, y3);
-	glVertex2i(x2, y4);
+	glVertex2i(x2, y1);
+	glVertex2i(x2, y2);
 	glVertex2i(x1, y2);
 	glEnd();
 }
 
 void parallelepipedDraw() {
-	int x1=200, x2=300, y1=100, y2=175, y3=100, y4=175;
+	int x1=200, x2=300, y1=100, y2=175;
 	GLint i, n=40;
 	for(i = 0; i < n; i += 2)
-		parallelepiped(x1+i, x2+i, y1+i, y2+i, y3+i, y4+i);
+		parallelepiped(x1+i, x2+i, y1+i, y2+i);
 }
 
 void init(void) {
