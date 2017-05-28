@@ -6,10 +6,10 @@
 double xmin = 50, ymin = 50, xmax = 100, ymax = 100;
 double xvmin = 200, yvmin = 200, xvmax = 300, yvmax = 300;
 
-const int RIGHT = 8;	// 8 is 1000
-const int LEFT = 2;	// 2 is 0010
-const int TOP = 4;	// 4 is 0100
-const int BOTTOM = 1;	// 1 is 0001
+const int TOP = 8;	// 8 is 1000
+const int RIGHT = 2;	// 2 is 0010
+const int BOTTOM= 4;	// 4 is 0100
+const int LEFT = 1;	// 1 is 0001
 int x1, x2, y1, y2;
 
 outcode computeOutcode(double x, double y) {
