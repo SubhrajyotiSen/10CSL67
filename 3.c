@@ -1,6 +1,8 @@
 #include <GL/glut.h>
 
 typedef float point[3];
+GLfloat theta[] = {0.0, 0.0, 0.0};
+GLint axis = 2;
 
 GLfloat vertices [][3] = {
 			{-1.0, -1.0, -1.0}, 
@@ -42,7 +44,7 @@ void polygon(int a, int b, int c, int d) {
 	glEnd();
 }
 
-void colorcube(void) {
+void colorcube() {
 	polygon(0, 3, 2, 1);
 	polygon(2, 3, 7, 6);
 	polygon(0, 4, 7, 3);
@@ -51,10 +53,7 @@ void colorcube(void) {
 	polygon(0, 1, 5, 4);
 }
 
-static GLfloat theta[] = {0.0, 0.0, 0.0};
-static GLint axis = 2;
-
-void display(void) {
+void display() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glClearColor(1.0, 1.0, 1.0, 1.0);
 	glLoadIdentity();
@@ -62,7 +61,6 @@ void display(void) {
 	glRotatef(theta[1], 0.0, 1.0, 0.0);
 	glRotatef(theta[2], 0.0, 0.0, 1.0);
 	colorcube();
-	glFlush();
 	glutSwapBuffers();
 }	
 

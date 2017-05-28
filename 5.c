@@ -15,21 +15,13 @@ int x1, x2, y1, y2;
 outcode computeOutcode(double x, double y) {
 	outcode code = 0;
 	if(y > ymax)
-	{
 		code |= TOP;
-	}
 	else if(y < ymin)
-	{
 		code |= BOTTOM;
-	}
 	if(x > xmax)
-	{
 		code |= RIGHT;
-	}
 	else if(x < xmin)
-	{
 		code |= LEFT;
-	}	
 	return code;
 }
 
@@ -49,7 +41,7 @@ void lineClipAndDraw(double x0, double y0, double x1, double y1) {
 		else {
 			double x, y;
 			
-			outcodeOut = outcode0?outcode0:outcode1;
+			outcodeOut = outcode0 ? outcode0 : outcode1;
 
 			if(outcodeOut & TOP) {
 				x = x0 + (x1 - x0) * (ymax - y0) / (y1 - y0);

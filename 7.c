@@ -26,13 +26,13 @@ void table(double topWid, double topThick, double legThick, double legLen) {
 	double dist = 0.95 * topWid / 2.0 - legThick / 2.0;
 
 	glPushMatrix();
-	glTranslated(dist, 0 ,dist);
+	glTranslated(dist, 0.0 ,dist);
 	tableLeg(legThick, legLen);
 	glTranslated(0.0, 0.0, -2 * dist);
 	tableLeg(legThick,legLen);
-	glTranslated(-2 * dist, 0, 2 * dist);
+	glTranslated(-2 * dist, 0.0, 2 * dist);
 	tableLeg(legThick, legLen);
-	glTranslated(0, 0, -2 * dist);
+	glTranslated(0.0, 0.0, -2 * dist);
 	tableLeg(legThick, legLen);
 	glPopMatrix();
 }

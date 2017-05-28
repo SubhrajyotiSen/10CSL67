@@ -4,6 +4,7 @@
 double xmin = 50, xmax = 100, ymax = 100, ymin = 50;	
 double xvmin = 200, yvmin = 200, xvmax = 300, yvmax = 300;		
 double x0, y0, x1, y1;
+
 int cliptest(double p, double q, double *t1, double *t2) {
 	double t=q/p;
 	if(p < 0.0)	{
@@ -83,8 +84,6 @@ void display()
 void myinit()
 {
 	glClearColor(1.0, 1.0, 1.0, 1.0);
-	glColor3f(1.0, 0.0, 0.0);
-	glPointSize(1.0);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	gluOrtho2D(0.0, 499.0, 0.0, 499.0);
