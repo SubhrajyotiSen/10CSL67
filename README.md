@@ -38,8 +38,11 @@ You can install the required dependencies using the following commands
 #### On Arch based systems
     pacman -S mesa glu freeglut
     
+#### On MacOS/OSX
+     add OPENGL.framework and GLUT.framework to project properties in XCode
+    
 ### Compiling the code
-    sh compile.sh file.c
+    sh compile.sh file
     
 ### Executing the  code
-    ./compiledFile
+    ./file.o

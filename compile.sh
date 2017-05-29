@@ -1,3 +1,3 @@
 #!/bin/sh
 
-g++ $1 -lglut -lGL -lGLEW -lGLU -o compiledFile
+g++ $1.c -lglut -lGL -lGLU -o $1.o
