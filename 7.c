@@ -98,7 +98,6 @@ int main(int argc,char **argv) {
 	glShadeModel(GL_SMOOTH);
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_NORMALIZE);
-	glClearColor(0.1, 0.1, 0.1, 0.0);
-	glViewport(0, 0, 640, 480);
+	glClearColor(0.0, 0.0, 0.0, 0.0);
 	glutMainLoop();
 }

@@ -1,6 +1,5 @@
 #include <GL/glut.h>
 
-typedef float point[3];
 GLfloat theta[] = {0.0, 0.0, 0.0};
 GLint axis = 2;
 
@@ -72,12 +71,14 @@ void spincube() {
 }
 
 void mouse(int btn, int state, int x, int y) {
-	if (btn == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
-		axis = 0;
-	if (btn == GLUT_MIDDLE_BUTTON && state == GLUT_DOWN)
-		axis = 1;
-	if (btn == GLUT_RIGHT_BUTTON && state == GLUT_DOWN)
-		axis = 2;
+	if(state == GLUT_DOWN) {
+		if (btn == GLUT_LEFT_BUTTON )
+			axis = 0;
+		if (btn == GLUT_MIDDLE_BUTTON )
+			axis = 1;
+		if (btn == GLUT_RIGHT_BUTTON )
+			axis = 2;
+	}
 	spincube();
 }
 
